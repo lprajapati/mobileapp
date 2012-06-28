@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>My Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+  </head>
+<body>
+
+<ul data-role="listview" data-theme="b">
+  <% @tracks.each do |track| %>
+      <li data-role="list-divider">
+          <a href="test.html">
+             <img alt="track icon" src="http://o.scdn.co/image/f809ad49096db96cc9d46522a87a061cec0a6ee4" class="ui-li-thumb"></img>
+             <%=  track["name"] %>
+          </a>
+      </li>
+  <% end %>
+</ul>>
+
+</body>
+</html>
